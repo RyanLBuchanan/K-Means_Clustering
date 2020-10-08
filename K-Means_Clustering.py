@@ -8,8 +8,8 @@ import pandas as pd
 
 # Import dataset
 dataset = pd.read_csv('Mall_Customers.csv')
-X = dataset.iloc[:, 2:-4].values
-y = dataset.iloc[:, -4].values
+X = dataset.iloc[:, 1:].values
+y = dataset.iloc[:, ].values
 
 # Use the Elbow Method to find the optimal number of clusters
 
