@@ -11,7 +11,7 @@ dataset = pd.read_csv('Mall_Customers.csv')
 X = dataset.iloc[:, [3,4]].values
 
 # Use the Elbow Method to find the optimal number of clusters
-
+from sklearn.cluster import KMeans
 
 # Train the K-Means model on the dataset
 
