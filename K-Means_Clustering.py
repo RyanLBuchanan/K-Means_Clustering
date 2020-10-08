@@ -2,10 +2,14 @@
 # Input by Ryan L Buchanan 06OCT20
 
 # Import libraries 
-
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
 
 # Import dataset
-
+dataset = pd.read_csv('Mall_Customers.csv')
+X = dataset.iloc[:, 2:-4].values
+y = dataset.iloc[:, -4].values
 
 # Use the Elbow Method to find the optimal number of clusters
 
