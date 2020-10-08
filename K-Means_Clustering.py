@@ -22,7 +22,10 @@ plt.plot(range(1,11), wcss)
 plt.xlabel('Number of Clusters')
 plt.ylabel('Within Cluster Sum of Squares')
 plt.show();
-# Train the K-Means model on the dataset
 
+# Train the K-Means model on the dataset
+    kmeans = KMeans(n_clusters = 5, init = 'k-means++', random_state = 42)
+    y_kmeans = kmeans.fit_predict(X)
+    
 
 # Visualize the clusters (we need a 2-Dimensional plot!)
