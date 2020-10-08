@@ -15,6 +15,7 @@ from sklearn.cluster import KMeans
 wcss = []
 for i in range(1, 11):
     kmeans = KMeans(n_clusters = i, init = 'k-means++', random_state = 42)
+    kmeans.fit(X)
 # Train the K-Means model on the dataset
 
 
