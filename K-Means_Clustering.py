@@ -6,10 +6,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-# Import dataset
+# Import dataset (there is no dependent variable (y-variable) a priori)
 dataset = pd.read_csv('Mall_Customers.csv')
-X = dataset.iloc[:, 1:].values
-y = dataset.iloc[:, ].values
+X = dataset.iloc[:, [3,4]].values
 
 # Use the Elbow Method to find the optimal number of clusters
 
@@ -17,4 +16,4 @@ y = dataset.iloc[:, ].values
 # Train the K-Means model on the dataset
 
 
-# Visualize the clusters
+# Visualize the clusters (we need a 2-Dimensional plot!)
